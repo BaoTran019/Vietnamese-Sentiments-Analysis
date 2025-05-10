@@ -1,7 +1,8 @@
-from utils.preprocess import clean_text
+import pandas as pd
+import numpy as np
 
-str = 'Hello tôi là dsaf ád'
+data_folder_path = 'data'
+dataset_path = data_folder_path + '/synthetic_train_converted_and_embedding.csv'
 
-str = clean_text(str)
-
-print(str)
+df_train = pd.read_csv(dataset_path)
+print(df_train)
