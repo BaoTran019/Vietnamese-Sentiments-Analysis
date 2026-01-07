@@ -29,3 +29,5 @@ class BaseModel:
         """Load model from file"""
         import joblib
         self.model = joblib.load(path)
+
+
